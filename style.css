@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  background: linear-gradient(to right top, #00d9de, #00de62);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background-color: white;
+  min-height: 80vh;
+  width: 80%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 2.1rem;
+  display: flex;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 2.1rem 0rem 0rem 2.1rem;
+  border-right: 1px solid #d3d3d3;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+
+.link img {
+  width: 15%;
+}
+
+.link h2 {
+  padding: 0rem 2rem;
+}
+
+.promotion {
+  display: flex;
+  flex-direction: column;
+  word-wrap: normal;
+  text-align: center;
+}
+
+.redeem {
+    margin: 2rem 0rem;
+  border-radius: 2rem;
+  border: 1px solid #d3d3d3;
+  width: 50%;
+  height: 50px;
+  text-decoration: solid;
+  outline: none;
+  background-color: Transparent;
+  align-self: center;
+}
+
+.user {
+  display: flex;
+  width: 80%;
+  margin: 2rem 0rem;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 3rem;
+  line-break: strict;
+}
+
+.user img {
+  width: 20%;
+  border-radius: 50%;
+  margin-right: 3rem;
+}
+
+.username {
+  line-break: after;
+}
+
+/*Main Content*/
+.finances {
+  flex: 3;
+}
