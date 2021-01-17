@@ -2,11 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 200;
+}
+
+h1{
   font-family: "Ubuntu", sans-serif;
 }
 
 main {
-  background: linear-gradient(to right top, #00d9de, #00de62);
+  background: linear-gradient(to right top, #14d1de, #17fa48);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -41,19 +46,41 @@ main {
   justify-content: center;
 }
 
+.finLogo {
+  padding: 1rem;
+}
+
 .link {
   display: flex;
-  margin: 2rem 0rem;
-  padding: 1rem 5rem;
+  margin: 1.6rem 0rem;
+  padding: 0rem 2rem;
   align-items: center;
 }
 
-.link img {
-  width: 15%;
+.link i {
+  font-size: 1rem;
+  color: #696969;
+  font-weight: 700;
 }
 
-.link h2 {
-  padding: 0rem 2rem;
+.link .active-link {
+  font-size: 1.4rem;
+  background: linear-gradient(to right top, #14d1de, #17fa48);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.link h3 {
+  font-size: 18px;
+  padding: 0rem 1rem;
+  color: #696969;
+  font-weight: 200;
+}
+
+.link:hover {
+  background: linear-gradient(to right top, #14d1de, #17fa48);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .promotion {
@@ -61,24 +88,42 @@ main {
   flex-direction: column;
   word-wrap: normal;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.promotion img {
+  width: 65%;
+  align-self: center;
+}
+
+.promotion p {
+  padding: 1rem;
 }
 
 .redeem {
-    margin: 2rem 0rem;
+  margin: 1rem 0rem;
   border-radius: 2rem;
   border: 1px solid #d3d3d3;
   width: 50%;
   height: 50px;
-  text-decoration: solid;
+  font-weight: 500;
+  font-size: 16px;
   outline: none;
   background-color: Transparent;
   align-self: center;
+}
+
+.redeem:hover {
+  color: white;
+  background: linear-gradient(to right top, #14d1de, #17fa48);
 }
 
 .user {
   display: flex;
   width: 80%;
   margin: 2rem 0rem;
+  padding: 1rem;
   align-items: center;
   justify-content: center;
   background: linear-gradient(
@@ -86,7 +131,7 @@ main {
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.5)
   );
-  border-radius: 3rem;
+  border-radius: 1.5rem;
   line-break: strict;
 }
 
@@ -98,9 +143,98 @@ main {
 
 .username {
   line-break: after;
+  font-weight: 600;
+}
+.user-role {
+  font-weight: 400;
+  font-size: 14px;
+  color: #696969;
+}
+
+.icon {
+  padding-left: 1.5rem;
+  color: #dcdcdc;
+}
+
+.icon:hover {
+  background: linear-gradient(to right top, #14d1de, #17fa48);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*Main Content*/
 .finances {
   flex: 3;
+  display: flex;
+}
+
+.recent {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.overview{
+  margin: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+}
+.overview h1{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.overview p{
+  font-size: 15px;
+  color:#696969;
+  opacity: 95%;
+}
+
+
+.avaible-funds{
+  background-color: white;
+  border-radius: 1rem;
+  width: 80%;
+  padding: 1.8rem;
+  opacity: 75%;
+}
+
+.view-selection{
+  width: 80%;
+  padding: 1.8rem;
+}
+
+.view-selection button{
+  width: 45%;
+  margin: .5rem;
+  padding: 1rem;
+  border: none;
+  background-color: transparent;
+  border-radius: 1rem;
+  color: #696969;
+}
+
+.view-selection button i{
+padding-right: 1rem;
+}
+
+.view-selection .active-button{
+  background: linear-gradient(to right top, #14d1de, #17fa48);
+  color: #ffffff;
+  font-size: 17px;
+}
+
+
+
+/**/
+
+.quick-access {
+  background-color: lawngreen;
+  flex: 1;
 }

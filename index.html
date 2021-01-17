@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/ea76a89a44.js" crossorigin="anonymous"></script>
     <title>Fintech Dashboard</title>
   </head>
   <body>
@@ -19,39 +20,58 @@
           </div>
           <div class="naviagtion">
             <div class="link">
-              <img src="/images/overview.png" />
-              <h2>Overview</h2>
+              <i class="active-link fas fa-donate"></i>
+              <h3 class="active-link">Overview</h3>
             </div>
             <div class="link">
-              <img src="/images/reports.png" />
-              <h2>Reports</h2>
+              <i class="far fa-chart-bar"></i>
+              <h3>Reports</h3>
             </div>
             <div class="link">
-              <img src="/images/card.png" />
-              <h2>Cards</h2>
+              <i class="fas fa-credit-card"></i>
+              <h3>Cards</h3>
             </div>
             <div class="link">
-              <img src="images/email.png" />
-              <h2>Support</h2>
+              <i class="fas fa-phone-alt"></i>
+              <h3>Support</h3>
             </div>
           </div>
           <div class="promotion">
+            <img src="/images/promotion.png" />
             <h4>Congragulations!</h4>
-            <p>You have been selected for a free year of premium</p>
-            <button class="redeem">Redeem now</button>
+            <p>
+              You have been selected to be a beta tester for our new mobile app!
+              Get started below
+            </p>
+            <button class="redeem">Get Started</button>
           </div>
           <div class="user">
             <img src="/images/profile.png" />
             <div class="user-info">
-              <p class="username">Sullie</p><br>
+              <p class="username">John Doe</p>
               <p class="user-role">Developer</p>
             </div>
+            <i class="icon fas fa-chevron-circle-right"></i>
           </div>
         </div>
         <div class="finances">
-          <div class="overview">
-            <h1>Overview</h1>
-            <p>Hey John Doe, welcome back!</p>
+          <div class="recent">
+            <div class="overview">
+              <h1>Overview</h1>
+              <p>Hey John Doe, welcome back!</p>
+            </div>
+            <div class="avaible-funds">
+              <h3>Available balance</h3>
+              <br>
+              <h1>1,000,000,000</h1>
+              <h3 class='account_number'>Current A/C: <span>XXXX-XXXX-XXXX-1234</span></h3>
+            </div>
+            <div class="view-selection">
+              <button class="active-button"><i class="fas fa-exchange-alt"></i> Recent charges</button>
+              <button><i class="fas fa-chart-pie"></i> Spending</button>
+            </div>
+          </div>
+          <div class="quick-access">
           </div>
         </div>
       </section>
