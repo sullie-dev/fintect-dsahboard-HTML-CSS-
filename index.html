@@ -8,7 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/ea76a89a44.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ea76a89a44.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Fintech Dashboard</title>
   </head>
   <body>
@@ -62,16 +65,111 @@
             </div>
             <div class="avaible-funds">
               <h3>Available balance</h3>
-              <br>
-              <h1>1,000,000,000</h1>
-              <h3 class='account_number'>Current A/C: <span>XXXX-XXXX-XXXX-1234</span></h3>
+              <br />
+              <h1>€30,630</h1>
+              <h3 class="account_number">
+                Current A/C: <span>XXXX-XXXX-XXXX-1234</span>
+              </h3>
             </div>
             <div class="view-selection">
-              <button class="active-button"><i class="fas fa-exchange-alt"></i> Recent charges</button>
+              <button class="active-button">
+                <i class="fas fa-exchange-alt"></i> Recent charges
+              </button>
               <button><i class="fas fa-chart-pie"></i> Spending</button>
+            </div>
+
+            <div class="transactions">
+              <h3>Today January 17th transactions</h3>
+              <hr />
+              <div class="transaction-list">
+                <i class="transaction-icon-minus fas fa-minus"></i>
+                <p class="transaction-merchant">
+                  Payment to <span>Amazon</span>
+                </p>
+                <p class="transaction-amount">€20.00</p>
+              </div>
+              <div class="transaction-list">
+                <i class="transaction-icon-minus fas fa-minus"></i>
+                <p class="transaction-merchant">
+                  Payment to <span>Server Farm</span>
+                </p>
+                <p class="transaction-amount">€20,000.00</p>
+              </div>
+              <h3>Yesterday January 16th transactions</h3>
+              <hr />
+              <div class="transaction-list">
+                <i class="transaction-icon-plus fas fa-plus"></i>
+                <p class="transaction-merchant">
+                  Transfer from <span>Jane Doe</span>
+                </p>
+                <p class="transaction-amount">€1,000.00</p>
+              </div>
+              <div class="transaction-list">
+                <i class="transaction-icon-plus fas fa-plus"></i>
+                <p class="transaction-merchant">
+                  Transfer from <span>Stripe</span>
+                </p>
+                <p class="transaction-amount">€50,000.00</p>
+              </div>
+              <h3>January 15th transactions</h3>
+              <hr />
+              <div class="transaction-list">
+                <i class="transaction-icon-plus fas fa-plus"></i>
+                <p class="transaction-merchant">
+                  Reimbursement from <span>Digital Ocean</span>
+                </p>
+                <p class="transaction-amount">€200.00</p>
+              </div>
+              <div class="transaction-list">
+                <i class="transaction-icon-minus fas fa-minus"></i>
+                <p class="transaction-merchant">
+                  Disputed charge from <span>Morgan Stanely</span>
+                </p>
+                <p class="transaction-amount">€150.00</p>
+              </div>
             </div>
           </div>
           <div class="quick-access">
+            <div class="toolbar">
+              <i class="fas fa-search"></i>
+              <i class="far fa-bell"></i>
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="quick-transfer">
+              <h4>Quick Transfer</h4>
+              <button class="active-button"><i class="fas fa-phone-alt"></i> Mobile No.</button>
+              <button><i class="fas fa-university"></i> Bank Acc</button>
+              <input
+                type="tel"
+                class="quick-transfer-telephone"
+                placeholder="+353 87 123 4567"
+              />
+              <input
+                type="number"
+                class="quick-transfer-amount"
+                placeholder="€1,000"
+                min="0"
+              />
+              <button class="send-money">Send Money</button>
+              <div class="recent-transfer">
+                <h3>Recent Transfers</h3>
+                <div class="user-transfer">
+                  <img src="images/profile.png" alt="">
+                  <p>John Doe</p>
+                  <p class="user-transfer-amount">€50.00</p>
+                </div>
+                <div class="user-transfer">
+                  <img src="images/profile.png" alt="">
+                  <p>John Doe</p>
+                  <p class="user-transfer-amount">€50.00</p>
+                </div>
+                <div class="user-transfer">
+                  <img src="images/profile.png" alt="">
+                  <p>John Doe</p>
+                  <p class="user-transfer-amount">€50.00</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
